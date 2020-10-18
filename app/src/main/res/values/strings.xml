@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tour Gude2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment_mon">Hello blank fragment from monumt</string>
+    <string name="hello_blank_fragment_park">Hello blank fragment from parks</string>
+</resources>
