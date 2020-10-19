@@ -1,10 +1,14 @@
 package com.example.tourgude2.fragments.adapters
 
-import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tourgude2.R
 import com.example.tourgude2.versionR
@@ -23,9 +27,12 @@ class versionAdapterR(val versionList: List<versionR>) :
         var location: TextView = itemView.findViewById(R.id.location)
         var number: TextView = itemView.findViewById(R.id.number)
 
+        var arrow_up: ImageView = itemView.findViewById(R.id.arrow_up)
+        var arrow_down: ImageView = itemView.findViewById(R.id.arrow_down)
 
         var linearLayTxt: LinearLayout = itemView.findViewById(R.id.linaerlay1)
         var expandableTxt: RelativeLayout = itemView.findViewById(R.id.expandable_id)
+
 
     }
 
@@ -55,12 +62,15 @@ class versionAdapterR(val versionList: List<versionR>) :
 
         var isExpandable: Boolean = versionList[position].expandable
         holder.expandableTxt.visibility = if (isExpandable) View.VISIBLE else View.GONE
+        holder.arrow_down.visibility = if (!isExpandable) View.VISIBLE else View.GONE
+        holder.arrow_up.visibility = if (isExpandable) View.VISIBLE else View.GONE
 
         holder.linearLayTxt.setOnClickListener {
             val version = versionList[position]
             version.expandable = !version.expandable
             notifyItemChanged(position)
         }
+
 
     }
 

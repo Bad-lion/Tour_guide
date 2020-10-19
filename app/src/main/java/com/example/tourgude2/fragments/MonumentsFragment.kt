@@ -54,9 +54,9 @@ class MonumentsFragment : Fragment() {
     private fun initData() {
         versionList.clear()
 
-        versionList.add(versionP(R.drawable.chingis_park,"Monument to Ormon-Khan", "The monument was opened on November 5, 2002 by President A. Akayev to his \"great ancestor\".", "orientir"))
-        versionList.add(versionP(R.drawable.chingis_park,"Monument to  Frunze", "It was installed on October 25, 1967 on a high pedestal decorated with polished red granite with the inscription: \"M. V. Frunze from the Communist party of Kyrgyzstan and the workers of the Kyrgyz SSR»", "dsafa"))
-        versionList.add(versionP(R.drawable.chingis_park,"Monument to  Chingiz Aytmaov","The monument was opened on August 30, 2011. Sculptor -at the start of Mamai . The height of the statue is 4 meters, the height of the arch is 7 meters 70 cm. It is timed to the 20th anniversary of Kyrgyzstan's independence.","fsdf" ))
+        versionList.add(versionP(R.drawable.ormon,"Monument to Ormon-Khan", "The monument was opened on November 5, 2002 by President A. Akayev to his \"great ancestor\".", ""))
+        versionList.add(versionP(R.drawable.frunze,"Monument to  Frunze", "It was installed on October 25, 1967 on a high pedestal decorated with polished red granite with the inscription: \"M. V. Frunze from the Communist party of Kyrgyzstan and the workers of the Kyrgyz SSR»", ""))
+        versionList.add(versionP(R.drawable.chingiz,"Monument to  Chingiz Aytmaov","The monument was opened on August 30, 2011. Sculptor -at the start of Mamai . The height of the statue is 4 meters, the height of the arch is 7 meters 70 cm. It is timed to the 20th anniversary of Kyrgyzstan's independence.","" ))
 
     }
 

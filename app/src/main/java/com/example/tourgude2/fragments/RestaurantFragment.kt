@@ -31,13 +31,13 @@ class RestaurantFragment : Fragment()  {
     }
     private fun initData() {
         versionList.clear()
-        versionList.add(versionR(R.drawable.duet_rest, "DUET", "district: Leninskiy","Cuisine: traditional Turkish", "900","daily from 11 to 23", "https://go.2gis.com/x27j3", "+996 227‒44‒77‒33"))
-        versionList.add(versionR(R.drawable.imperator_rest, "Imperator", "district: Octaborsky","Cuisine: China", "500","daily from 11 to 23", "https://go.2gis.com/gh5sp", "+996 778‒88‒83‒30\n" +
+        versionList.add(versionR(R.drawable.duet_rest, "DUET", "Leninskiy","traditional Turkish", "900 som","daily from 11 to 23"," 153 kiev street, Bishkek", "+996 227‒44‒77‒33"))
+        versionList.add(versionR(R.drawable.imperator_rest, "Imperator", "Octaborsky","China", "500 som","daily from 11 to 23", "Bishkek, 153 Kievskaya", "+996 778‒88‒83‒30\n" +
                 "+996 705‒61‒29‒43\n" +
                 "+996 557‒22‒27‒49"))
-        versionList.add(versionR(R.drawable.stake_house_rest, "Etiler Steakhouse", "district: Sverdlovsky","Cuisine: China", "1000","daily from 12 to 24", "42.8263617, 74.60417400000006", "+996 770‒00‒45‒35" ))
-        versionList.add(versionR(R.drawable.buhara, "Buhara", "district: Pervomaysky","Cuisine: East", "700","daily from 12 to 24", "https://go.2gis.com/gh5sp", "++996 555‒12‒44‒44" ))
-        versionList.add(versionR(R.drawable.barshek_rest, "Barashek", "district: Asanbay","Cuisine: Asian, Japon, East", "500","daily from 10 to 23", "https://go.2gis.com/gh5sp", "+996 (312) 52‒11‒11\n" +
+        versionList.add(versionR(R.drawable.stake_house_rest, "Etiler Steakhouse", "Sverdlovsky"," China", "1000 som","daily from 12 to 24", " 381 Park Avenue South, New York", "+996 770‒00‒45‒35" ))
+        versionList.add(versionR(R.drawable.buhara, "Buhara", " Pervomaysky","East", "700 som","daily from 12 to 24", "381 Park Avenue South", "++996 555‒12‒44‒44" ))
+        versionList.add(versionR(R.drawable.barshek_rest, "Barashek", " Asanbay","Asian, Japon, East", "500 som","daily from 10 to 23", "Bishkek, Ala-Too Square", "+996 (312) 52‒11‒11\n" +
                 "+996 556‒52‒11‒11" ))
 
 

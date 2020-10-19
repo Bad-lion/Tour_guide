@@ -51,28 +51,53 @@
                     android:textSize="25sp"
                     android:typeface="normal" />
 
-                <TextView
-                    android:id="@+id/district"
-                    android:layout_width="wrap_content"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/name"
-                    android:layout_gravity="top"
                     android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/actor"
-                    android:text="district"
-                    android:textSize="15sp" />
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:fontFamily="@font/actor"
+                        android:text="district"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/district"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:fontFamily="@font/actor"
+                        android:text=""
+                        android:textSize="15sp" />
+                </LinearLayout>
 
 
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_centerVertical="true"
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_outline_unfold_more_24" />
+                    android:layout_centerVertical="true">
 
+                    <ImageView
+                        android:id="@+id/arrow_down"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+                    <ImageView
+                        android:id="@+id/arrow_up"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_up_24" />
+                </RelativeLayout>
             </RelativeLayout>
-
-
 
 
         </LinearLayout>
@@ -83,6 +108,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="20dp"
             android:orientation="vertical"
             android:visibility="visible">
@@ -100,38 +126,87 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginRight="14dp"
                         android:src="@drawable/ic_baseline_info_24" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
+
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/couisine"
-                            android:layout_width="wrap_content"
-                            android:textSize="20sp"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/abhaya_libre"
-                            android:text="Cuisine: " />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/average"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/abhaya_libre"
-                            android:text="Average fee: " />
+                            <TextView
 
-                        <TextView
-                            android:id="@+id/workTime"
-                            android:layout_width="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text="Cuisine: "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/couisine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text=""
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/abhaya_libre"
-                            android:text="Working time: " />
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text="Average fee: "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/average"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text=""
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text="Working time: "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/workTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/abhaya_libre"
+                                android:text=""
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
 
@@ -139,14 +214,16 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_marginRight="20dp"
                     android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="20dp"
+
                     android:background="@android:color/darker_gray" />
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -160,31 +237,40 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/abhaya_libre"
+                            android:text="Location: "
+                            android:textSize="20sp" />
 
                         <TextView
                             android:id="@+id/location"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:autoLink="map"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/abhaya_libre"
                             android:layout_gravity="center_vertical"
-                            android:text="location" />
+                            android:autoLink="map"
+                            android:fontFamily="@font/abhaya_libre"
+                            android:textSize="20sp" />
 
 
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginTop="3dp"
                     android:layout_marginRight="20dp"
                     android:background="@android:color/darker_gray" />
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -203,11 +289,11 @@
                             android:id="@+id/number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="20sp"
-                            android:autoLink="phone"
-                            android:fontFamily="@font/abhaya_libre"
                             android:layout_gravity="center_vertical"
-                            android:text="0700 244 344" />
+                            android:autoLink="phone"
+                            android:fontFamily="@font/abeezee"
+                            android:text="0700 244 344"
+                            android:textSize="18sp" />
 
                     </LinearLayout>
                 </LinearLayout>

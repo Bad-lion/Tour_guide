@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.text.util.Linkify
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,6 +28,9 @@ class versionAdapterP(val versionList: List<versionP>) :
         var discrption: TextView = itemView.findViewById(R.id.disciption)
         var linearLayTxt: LinearLayout = itemView.findViewById(R.id.linaerlay1)
         var expandableTxt: RelativeLayout = itemView.findViewById(R.id.expandable_id)
+
+        var arrow_up: ImageView = itemView.findViewById(R.id.arrow_up)
+        var arrow_down: ImageView = itemView.findViewById(R.id.arrow_down)
 
     }
 
@@ -52,6 +56,8 @@ class versionAdapterP(val versionList: List<versionP>) :
 
         var isExpandable: Boolean = versionList[position].expandable
         holder.expandableTxt.visibility = if (isExpandable) View.VISIBLE else View.GONE
+        holder.arrow_down.visibility = if (!isExpandable) View.VISIBLE else View.GONE
+        holder.arrow_up.visibility = if (isExpandable) View.VISIBLE else View.GONE
 
         holder.linearLayTxt.setOnClickListener {
             val version = versionList[position]
@@ -59,6 +65,8 @@ class versionAdapterP(val versionList: List<versionP>) :
             notifyItemChanged(position)
         }
 
+
+        Linkify.addLinks(holder.location, Linkify.MAP_ADDRESSES)
 
     }
 
